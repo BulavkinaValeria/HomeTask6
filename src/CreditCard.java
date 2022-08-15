@@ -1,12 +1,22 @@
-import java.util.Random;
-
 public class CreditCard {
-    static int number;
-    static int summ;
-Random random = new Random();
+    String number;
+    double summ;
 
-    public CreditCard() {
-        number = random.nextInt(1500000000);
-        summ = 2500000;
+    CreditCard(String number, double summ) {
+        this.number = number;
+        this.summ = summ;
+    }
+
+    void popolnenie(double summPopolneniya) {
+        summ = summ + summPopolneniya;
+    }
+
+    void snyatie(double summSnyatiya) {
+        summ = summ + summSnyatiya;
+    }
+
+    String infoAboutCards() {
+        return "Number: " + this.number + " Summ: " + this.summ;
     }
 }
+
