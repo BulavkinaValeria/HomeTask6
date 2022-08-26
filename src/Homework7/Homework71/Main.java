@@ -18,6 +18,12 @@ public class Main {
             figure[i++] = new Square();
             square.findPerimeter();
             System.out.println("Perimeter's summ = " + (triangle.perimeter * 2 + square.perimeter * 2 + circle.perimeter));
+            Figure[] figures = new Figure[5];
+            figure[0] = new Circle();
+            figure[1] = new Triangle();
+            figure[2] = new Square();
+            figure[3] = new Triangle();
+            figure[4] = new Circle();
         }
     }
 }
